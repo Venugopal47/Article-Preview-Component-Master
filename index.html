@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Article preview component</title>
+</head>
+<body class="flex justify-center items-center h-screen bg-LightGrayishBlue">
+  <main class="w-[min(90%,30rem)] rounded-2xl flex flex-col bg-white md:flex-row md:w-[min(90%,64rem)] ">
+
+    <section class="overflow-hidden rounded-tl-2xl rounded-tr-2xl md:rounded-bl-2xl md:rounded-tr-none basis-2/5">
+      <img class="w-1/1 h-1/1" src="./images/drawers.jpg" alt="drawers">
+    </section>
+
+    <section class="flex flex-col space-y-6 basis-3/5">
+
+      <div class="px-10 pt-10 flex flex-col space-y-6">
+        <h1 class="text-2xl font-bold text-veryDarkGrayishBlue">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p class="text-desaturatedDarkBlue text-lg font-[500]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+      </div>
+
+      <div class="px-10 flex flex-row justify-between items-center py-6 relative">
+
+        <figure class="user-info flex flex-row space-x-4 items-center">
+          <img class="w-12 h-12 rounded-full" src="./images/avatar-michelle.jpg" alt="michelle avatar">
+          <figcaption>
+            <p class="font-bold text-veryDarkGrayishBlue text-lg">Michelle Appleton</p>
+            <p class="text-grayishBlue text-lg font-[500]">28 Jun 2020</p>
+          </figcaption>
+        </figure>
+
+        <div class="desktop-share hidden absolute -top-1/1 left-[63%]">
+          <figure class="list flex flex-row-reverse gap-6 justify-center px-10 py-5 w-75 bg-veryDarkGrayishBlue rounded-xl relative">
+            <img src="./images/icon-pinterest.svg" alt="pininterest icon">
+            <img src="./images/icon-twitter.svg" alt="twitter icon">
+            <img src="./images/icon-facebook.svg" alt="facebook icon">
+            <figcaption>
+              <p class="text-desaturatedDarkBlue font-[700] tracking-[0.2rem] text-xl">SHARE</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <figure class="mobile-share hidden flex flex-row space-x-6">
+          <p class="text-desaturatedDarkBlue font-[700] tracking-[0.2rem] text-xl">SHARE</p>
+          <img src="./images/icon-facebook.svg" alt="facebook icon">
+          <img src="./images/icon-twitter.svg" alt="twitter icon">
+          <img src="./images/icon-pinterest.svg" alt="pininterest icon">
+        </figure>
+
+        <button id="button" class="rounded-full w-12 h-12 bg-LightGrayishBlue flex justify-center items-center" type="button"><img src="./images/icon-share.svg" alt="share icon"></button>
+
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
