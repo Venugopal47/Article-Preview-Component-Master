@@ -20,5 +20,5 @@ html{
   transform: translateX(-50%);
   border-width: 10px;
   border-style: solid;
-  border-color: #2c3e50 transparent transparent transparent; /* Change color to match bg */
+  border-color: var(--color-veryDarkGrayishBlue) transparent transparent transparent; /* Change color to match bg */
 }
